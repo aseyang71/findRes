@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Top 5 Restaurants";
+}
+
+@model IEnumerable<string>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body>
+    <header>
+        <h4 class="bg-secondary text-white text-center">Top 5 restaurants of All Time</h4>
+    </header>
+    <div>
+        <ul>
+            <li class="list-group-item">Rank | Restaurant Name | Favorite Dish | Restaurant Address | Restaurant Phone# | Link to Web</li>
+            @foreach (string i in Model)
+            {
+                <li class="list-group-item">@i</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>
+
